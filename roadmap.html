@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Roadmap</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="box">
+    <h1>Career Roadmap for {{ career }}</h1>
+
+    <div class="result-card">
+        <h3>Roadmap</h3>
+        <p>{{ roadmap }}</p>
+    </div>
+
+    <a href="/"><button type="button">Predict Another Career</button></a>
+    <a href="/daily/{{ career }}">
+    <button>Start Day-by-Day Plan</button>
+</a>
+
+</div>
+<a href="/settings" class="settings-btn">⚙</a>
+
+</body>
+</html>

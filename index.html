@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Career Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Career Predictor System</h1>
+
+        <form action="/predict" method="post">
+
+            <!-- Subjects -->
+            <label>Choose Your Subject Area</label>
+            <select name="Subjects" required>
+                <option value="">--Select--</option>
+                <option>Computers</option>
+                <option>Science</option>
+                <option>Arts</option>
+                <option>Commerce</option>
+                <option>Management</option>
+                <option>Medical</option>
+                <option>Law</option>
+                <option>Education</option>
+            </select>
+
+            <!-- Work Style -->
+            <label>Preferred Work Style</label>
+            <select name="Work_Style" required>
+                <option value="">--Select--</option>
+                <option>Independent</option>
+                <option>Team</option>
+                <option>Creative Freedom</option>
+            </select>
+
+            <!-- Career Goal -->
+            <label>Career Goal</label>
+            <select name="Career_Goal" required>
+                <option value="">--Select--</option>
+                <option>High Salary</option>
+                <option>Creative Freedom</option>
+                <option>Social Impact</option>
+            </select>
+
+            <!-- Education -->
+            <label>Highest Education Level</label>
+            <select name="Education" required>
+                <option value="">--Select--</option>
+                <option>High School</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+            </select>
+
+            <button type="submit">Predict Career</button>
+        </form>
+
+        {% if result %}
+        <h2>Predicted Career: {{ result }}</h2>
+        <a href="/roadmap/{{ result }}"><button>View Roadmap</button></a>
+        {% endif %}
+
+    </div>
+    <a href="/settings" class="settings-btn">⚙</a>
+
+</body>
+
+</html>

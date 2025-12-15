@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Career Plan</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="box">
+    <h1>{{ career }} – Daily Plan</h1>
+
+    <div class="result-card">
+        <h3>Day {{ day }}</h3>
+        <p><b>Today's Task:</b> {{ task }}</p>
+
+        <!-- Mark Completed Button -->
+        <form method="post">
+            <button type="submit">✅ Mark as Completed</button>
+        </form>
+
+        <!-- Go Home Button -->
+        <a href="/">
+            <button type="button" style="margin-top: 15px;">🏠 Go Home</button>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Browser notification
+    if (Notification.permission !== "granted") {
+        Notification.requestPermission();
+    } else {
+        new Notification("New Career Task!", {
+            body: "Your next career task is ready 🚀"
+        });
+    }
+</script>
+<a href="/settings" class="settings-btn">⚙</a>
+
+</body>
+</html>

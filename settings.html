@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings - Career Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+
+        <div class="profile-section">
+            <h2>My Profile</h2>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email/Phone:</strong> {{ email }}</p>
+            <p><strong>Current Career:</strong> {{ career }}</p>
+            <p><strong>Current Day:</strong> {{ day }}</p>
+        </div>
+
+        <div class="settings-actions">
+            <a class="btn" href="/predict">Predict New Career</a>
+            <a class="btn" href="/daily/{{ career }}">Daily Tasks</a>
+            <a class="btn logout" href="/logout">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
