@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Predictor - Login/Signup</title>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, viewport-fit=cover">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>/* Image */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE DESIGN */
+.image-section img {
+    width: 220px;
+    margin-left: 30px;
+    border-radius: 20px;
+
+    /* 👇 Soft glass border */
+    padding: 10px;
+    background: rgba(238, 236, 236, 0.956);
+
+    /* 👇 Soft glow */
+    box-shadow: 
+        0 0 15px rgba(59, 59, 59, 0.781),
+        0 0 30px rgba(27, 27, 27, 0.812);
+
+    /* 👇 Smooth animation */
+    animation: float 3s infinite ease-in-out;
+
+    /* 👇 Smooth hover transition */
+    transition: all 0.4s ease;
+}
+
+/* 🌟 HOVER EFFECT (premium feel) */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔵 CIRCLE IMAGE + SOFT HIGHLIGHT */
+.image-section img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;   /* 👈 circle */
+
+    object-fit: cover;
+
+    /* 👇 Soft border ring */
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.979);
+
+    /* 👇 Always glow (no hover needed) */
+    box-shadow: 
+        0 0 15px rgba(58, 58, 58, 0.204),
+        0 0 25px rgba(43, 42, 43, 0.376);
+
+    /* 👇 smooth floating */
+    animation: float 3s infinite ease-in-out;
+}
+
+/* 🌊 Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+</head>
+<body >
+<div class="header" style="display: flex; justify-content: space-between; align-items: center; position: relative; padding: 0 30px; height: 70px;">
+    
+    <div class="logo">🚀 Career Predictor</div>
+
+    <div class="welcome-text" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; width: auto;">
+        <h2 style="font-size: 18px; color: #111; margin: 0; font-weight: 700;">Welcome Back! 🚀</h2>
+        <p style="font-size: 11px; color: #444; font-style: italic; margin: 0; opacity: 0.8; white-space: nowrap;">
+            Predicting the future is hard. Building it is easy. Let’s start here.
+        </p>
+    </div>
+
+    
+
+</div>
+    
+    <form> ... </form>
+</div>
+    <div class="box">
+        <h1>Career Predictor</h1>
+         
+
+        {% if error %}
+            <div class="error-message">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST">
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
+            <label for="identifier">Email or Phone</label>
+            <input type="text" id="identifier" name="identifier" placeholder="Enter Email or Phone" required>
+
+            <div class="action-buttons">
+                <button type="submit" name="action" value="login">Login</button>
+                <button type="submit" name="action" value="signup">Sign Up</button>
+            </div>
+        </form></div>
+           <div class="image-section">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    </div>
+    <!-- 🔻 FOOTER -->
+<div class="footer">
+
+    <p class="quote">✨ "Your future is created by what you do today, not tomorrow."</p>
+
+    <p class="info">
+        🚀 Career Predictor helps you discover the best career path based on your skills and interests.
+    </p>
+
+    
+
+</div>
+    </body>
+</html>

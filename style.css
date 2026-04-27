@@ -1,0 +1,404 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  overscroll-behavior: none; /* Isse bounce effect khatam ho jayega */
+}
+html {
+  background-color: #000000; /* Apni website ka main color yahan likhein */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; /* Side scroll rokne ke liye */
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2020/02/04/Light-Blue-Abstract-Webpage-Background-Graphics-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    text-align: center  ;
+
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.307);
+}
+
+
+
+
+/* ===== Container Box ===== */
+
+.box {
+     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 600px; /* Aap apne hisab se width adjust kar sakte hain */
+  margin: 40px auto; /* Isse box upar aur niche se thodi jagah chhod dega */
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.1); /* Glass effect ke liye */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  position: relative;
+  z-index: 5; /* Header se kam rakhein taaki header upar rahe */
+  background: #d0cece35;
+  text-align: center;
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Headings ===== */
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 38px;
+
+}
+
+h2, h3 {
+    color: #555;
+    
+}
+
+/* ===== Form Elements ===== */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+form select, form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form select:focus, form input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* ===== Buttons ===== */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #574fd6;
+    transform: scale(1.05);
+}
+
+/* ===== Result & Roadmap Card ===== */
+.result-card {
+    margin-top: 20px;
+    background: #f0f4ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.result-card h2 {
+    margin-top: 0;
+   
+}
+
+.result-card p {
+    line-height: 1.6;
+}
+
+/* ===== Link Buttons ===== */
+a button {
+    width: 100%;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 500px){
+    .box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+.settings-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+.profile-section {
+    text-align: left;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.settings-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.settings-actions .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.settings-actions .btn:hover {
+    background-color: #45a049;
+}
+
+.settings-actions .logout {
+    background-color: #f44336;
+}
+
+.settings-actions .logout:hover {
+    background-color: #d73833;
+}
+.settings-actions .delete-account {
+    background-color: #ff9800;
+}
+.error-message {
+    color: #f44336;
+    background-color: #fdecea;
+    border: 1px solid #f5c2c0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.success-message {
+    color: #4CAF50;
+    background-color: #e6f4ea;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Nav */
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #2575fc;
+    transform: scale(1.1);
+}
+
+/* Right section */
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Icons */
+.icon {
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Logout button */
+.logout {
+    background: red;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background: darkred;
+}
+/* FOOTER FIX */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+
+    /* 👇 DARK OVERLAY (important) */
+    background: transparent;
+
+    backdrop-filter: blur(8px);
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* TEXT CLEAR */
+.footer p {
+    color: rgb(18, 18, 18);
+}
+
+/* Quote highlight */
+.footer .quote {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0d0d0d;
+}
+
+/* Info */
+.footer .info {
+    font-size: 14px;
+    color: #111111;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+
+.image-section {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;  /* 👈 RIGHT SIDE */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Isse box hamesha header ke niche se guzrega */
+  background: rgba(0, 0, 0, 0.5); /* Taki piche ka content halka dikhe par text saaf ho */
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}

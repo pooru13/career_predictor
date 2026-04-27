@@ -1,0 +1,58 @@
+Subjects,Work_Style,Career_Goal,Education,Career
+Computers,Independent,High Salary,Bachelor's,Software Developer
+Computers,Independent,High Salary,Master's,Data Scientist
+Computers,Team,High Salary,Master's,AI Engineer
+Computers,Independent,High Salary,Master's,ML Engineer
+Computers,Team,High Salary,Bachelor's,Web Developer
+Computers,Team,High Salary,Bachelor's,App Developer
+Computers,Independent,High Salary,Bachelor's,Cloud Engineer
+Computers,Team,High Salary,Master's,Cyber Security Analyst
+Computers,Independent,High Salary,Bachelor's,DevOps Engineer
+
+Science,Team,High Salary,Master's,Research Scientist
+Science,Independent,High Salary,Master's,Data Analyst
+Science,Team,High Salary,Master's,Biotechnologist
+Science,Independent,High Salary,Master's,Environmental Scientist
+Science,Team,Social Impact,Master's,Healthcare Analyst
+Science,Team,High Salary,Master's,AI Researcher
+
+Arts,Creative Freedom,Creative Freedom,Bachelor's,Graphic Designer
+Arts,Creative Freedom,Creative Freedom,Bachelor's,UI/UX Designer
+Arts,Independent,Creative Freedom,Bachelor's,Animator
+Arts,Independent,Creative Freedom,Bachelor's,Illustrator
+Arts,Team,Creative Freedom,Bachelor's,Film Editor
+Arts,Creative Freedom,Creative Freedom,Bachelor's,Game Designer
+Arts,Independent,Creative Freedom,Master's,Art Director
+
+Arts,Team,Social Impact,High School,Teacher
+Arts,Team,Social Impact,Bachelor's,Professor
+Arts,Team,Social Impact,Bachelor's,Content Writer
+Arts,Independent,Creative Freedom,Bachelor's,Journalist
+
+Commerce,Team,High Salary,Bachelor's,Accountant
+Commerce,Team,High Salary,Master's,Chartered Accountant
+Commerce,Independent,High Salary,Bachelor's,Financial Analyst
+Commerce,Team,High Salary,Master's,Investment Banker
+Commerce,Team,High Salary,Bachelor's,Business Analyst
+Commerce,Independent,High Salary,Master's,Management Consultant
+
+Management,Team,High Salary,Master's,Product Manager
+Management,Team,High Salary,Master's,Project Manager
+Management,Team,High Salary,Bachelor's,Operations Manager
+Management,Team,High Salary,Master's,HR Manager
+Management,Team,High Salary,Master's,Marketing Manager
+
+Medical,Team,Social Impact,Master's,Doctor
+Medical,Team,Social Impact,Bachelor's,Nurse
+Medical,Independent,Social Impact,Master's,Pharmacist
+Medical,Team,Social Impact,Master's,Physiotherapist
+Medical,Team,Social Impact,Master's,Clinical Researcher
+
+Law,Team,Social Impact,Master's,Lawyer
+Law,Independent,High Salary,Master's,Corporate Lawyer
+Law,Team,Social Impact,Master's,Public Prosecutor
+Law,Independent,High Salary,Master's,Legal Advisor
+
+Education,Team,Social Impact,Master's,Education Counselor
+Education,Team,Social Impact,Bachelor's,School Administrator
+Education,Team,Social Impact,Master's,Academic Coordinator

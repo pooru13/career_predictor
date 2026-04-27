@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Career Roadmap</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- 🔷 HEADER START -->
+<div class="header">
+
+    <!-- LEFT -->
+    <div class="logo">
+        🚀 Career Predictor
+    </div>
+
+    <!-- CENTER NAV -->
+    <div class="nav-links">
+        <a href="/predict">Home</a>
+        <a href="/predict">Predict</a>
+        <a href="/roadmap/{{ career if career else '' }}">Roadmap</a>
+        <a href="/daily/{{ career if career else '' }}">Daily Tasks</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-section">
+        <span class="user-name">👤 {{ name if name else 'User' }}</span>
+        <a href="/settings" class="icon">⚙️</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+
+</div>
+<!-- 🔷 HEADER END -->
+<div class="box">
+    <h1>Career Roadmap for {{ career }}</h1>
+
+    <div class="result-card">
+        <h3>Roadmap</h3>
+        <p>{{ roadmap }}</p>
+    </div>
+
+    <a href="/"><button type="button">Predict Another Career</button></a>
+    <a href="/daily/{{ career }}">
+    <button>Start Day-by-Day Plan</button>
+</a>
+
+</div>
+<a href="/settings" class="settings-btn">⚙</a>
+<!-- 🔻 FOOTER -->
+<div class="footer">
+
+    <p class="quote">✨ "Your future is created by what you do today, not tomorrow."</p>
+
+    <p class="info">
+        🚀 Career Predictor helps you discover the best career path based on your skills and interests.
+    </p>
+
+    
+
+</div>
+
+</body>
+</html>

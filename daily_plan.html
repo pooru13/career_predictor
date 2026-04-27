@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, viewport-fit=cover" >
+    <title>Daily Career Plan</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- 🔷 HEADER START -->
+<div class="header">
+
+    <!-- LEFT -->
+    <div class="logo">
+        🚀 Career Predictor
+    </div>
+
+    <!-- CENTER NAV -->
+    <div class="nav-links">
+        <a href="/predict">Home</a>
+        <a href="/predict">Predict</a>
+        <a href="/roadmap/{{ career if career else '' }}">Roadmap</a>
+        <a href="/daily/{{ career if career else '' }}">Daily Tasks</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-section">
+        <span class="user-name">👤 {{ name if name else 'User' }}</span>
+        <a href="/settings" class="icon">⚙️</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+
+</div>
+<!-- 🔷 HEADER END -->
+<div class="box">
+    <h1>{{ career }} – Daily Plan</h1>
+
+    <div class="result-card">
+        <h3>Day {{ day }}</h3>
+        <p><b>Today's Task:</b> {{ task }}</p>
+
+        <!-- Mark Completed Button -->
+        <form method="post">
+            <button type="submit">✅ Mark as Completed</button>
+        </form>
+
+        <!-- Go Home Button -->
+        <a href="/">
+            <button type="button" style="margin-top: 15px;">🏠 Go Home</button>
+        </a>
+    </div>
+</div>
+
+
+<script>
+    
+    if (window.Notification && Notification.permission !== "granted") {
+        Notification.requestPermission();
+    }
+
+
+</script>
+<a href="/settings" class="settings-btn">⚙</a>
+<!-- 🔻 FOOTER -->
+<div class="footer">
+
+    <p class="quote">✨ "Your future is created by what you do today, not tomorrow."</p>
+
+    <p class="info">
+        🚀 Career Predictor helps you discover the best career path based on your skills and interests.
+    </p>
+
+    
+
+</div>
+</body>
+</html>
